@@ -1,0 +1,312 @@
+body{
+    background-image: url(../img/background.png);
+   
+    
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+margin: 0;
+
+}
+
+.container{
+        width:100%;
+        max-width: 1065px;
+        margin: 0 auto;
+
+}
+
+header{
+    margin-top: 49px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+}
+.logo img{
+    float: left;
+}
+
+
+
+
+.logo p{
+    margin-left: 58px;
+    margin-top: -4px;
+}
+.txt1{
+
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 29px;
+    text-transform: uppercase;
+    
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+
+.txt2{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+
+}
+
+.logo a{
+text-decoration: none;
+}
+
+.logo:hover img{
+    background-image: url(../img/logo1.png);
+display: block;
+width: 0px; /* обнуляем значение ширины */
+height: 44px; /* высота нового изображения */
+padding-left: 46px; /* размер отступа равен ширине нового изображения */
+
+}
+.logo:hover p{
+    color: #f26522;
+    transition: 0.5s;
+}
+
+.contacts{
+
+    float: right;
+    width: 250px;
+}
+.contacts p{
+
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+    text-align: right;
+
+    
+    
+}
+
+.images-container {
+    float: left;
+    margin-top: 40px;
+
+}
+
+.images-container div{
+    float: left;
+    text-align: center;
+
+    
+}
+.image{
+
+    /* margin-right: 65px; */
+    padding-right: 65px;
+    margin-bottom: 45px;
+    position: relative;
+    
+}
+ 
+
+
+.image img{
+    width: 307px;
+    height: 200px;
+    z-index: -1;
+  
+
+    
+    
+}
+
+
+.images-container div img{
+    border: 2px solid transparent;
+    border-image: linear-gradient(0deg,#000,  #fff);
+    border-image-slice: 1;
+
+ box-shadow: 0 17px 20px rgb(0, 0, 0);
+
+}
+
+.imghover{
+    z-index: 0;
+}
+
+
+
+.underline{
+font-family: Verdana;
+font-size: 18px;
+font-weight: normal;
+color: #fff;
+margin-top: 21px;
+
+
+}
+
+.underline:hover{
+    transition: 0.5s;
+    color: #f26522;
+}
+
+
+
+@media(max-width:1080px){
+
+    .image3{
+        margin-right: 65px;
+    }
+}
+
+.popup{
+    
+    position: absolute;
+    margin-top: -68px;
+    width: 311px;
+    height: 63px;
+    background: #f26522;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+.title-text{
+    float: left;
+    margin-top: 9px;
+    margin-left: 22px;
+    
+}
+.from{
+ 
+    font-size: 10px;
+    line-height: 21px;
+    font-family: Verdana;
+    color: #fff;
+    margin-left: -13px;
+}
+
+.euro{
+    font-size: 20px;
+    line-height: 21px;
+    font-family: Verdana;
+    color: #fff;
+  
+    
+    
+}
+.number{
+    font-size: 20px;
+    line-height: 21px;
+    font-family: Verdana;
+    color: #fff;
+    margin-left: -7px;
+}
+
+.title-textright{
+    float: right;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: Verdana;
+    color: #fff;
+    padding-top: 18px;
+    padding-right: 18px;
+}
+
+.title-textright::after{
+    content: '>';
+    color: #fff;
+    opacity: 0.5;
+
+}
+
+/* .image:hover .popup {
+    opacity: 1;
+    transition: 0.5s;
+} */
+
+.imghover:hover + .popup, .popup:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.popup:hover{
+  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .popup{
+
+    position: absolute;
+    margin-top: -68px;
+    background: rgba(0, 0, 0 , 0);
+    width: 311px;
+    height: 63px;
+    overflow: hidden;
+    
+   
+
+    
+}
+
+.popup::before{
+    content: '';
+    position: absolute;
+     top: 100%;
+      left: 0;
+   width: 100%;
+   height: 100%;
+   background: #f26522;
+   -webkit-transition: 0.3s;
+   transition: 0.3s;
+   
+    
+   
+ }
+.popup:hover::before{
+    top: 0;
+    
+} */
+a{
+    text-decoration: none;
+}
+.footer{
+    clear: both;
+    text-align: center;
+ 
+   
+  
+}
+.footer p{
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff;
+   
+}
